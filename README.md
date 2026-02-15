@@ -19,7 +19,7 @@ This project explores the line between coordination and strategic paralysis. We 
 
 1. **RQ1:** How does shifting the reward mechanism influence cooperation in a competitive environment? 
 
-2. **RQ2:** How do empirical MARL strategies align with theoretical Nash Equilibria? 
+2. **RQ2:** To what extent does the observed ’stalling’ behavior constitute a true game-theoretic equilibrium?
 
 
 ## 🛠️ Environment & Methodology
@@ -118,7 +118,7 @@ python main.py --mode train eval --alphas 1.0 0.25
 ### **🔧 Arguments Reference**
 | Argument | Type | Default | Description |
 | --- | --- | --- | --- |
-|`--mode`| `str` | Required | Execution mode: train, eval, br, or all. |
+|`--mode`| `str` | `all` | Execution mode: `train`, `eval`, `br`, or `all`. |
 |`--alphas`| `list` | [0.0 ... 1.0] | List of alpha values to process (e.g., 0.0 0.5 1.0). |
 | `--timesteps` | `int` | `100,000` | Total training timesteps per model. |
 | `--episodes` | `int` | `100` | Number of episodes for evaluation metrics. |
